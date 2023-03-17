@@ -1,5 +1,5 @@
-import * as TodoActionCreators from './todo';
+import * as TodoActionCreators from './todo'
 
 export default {
-  ...TodoActionCreators,
-};
+  ...TodoActionCreators
+}

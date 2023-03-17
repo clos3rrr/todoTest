@@ -1,5 +1,5 @@
-type Todo = {
-  id: Symbol;
-  description: string;
-  createdAt: Date;
-};
+interface Todo {
+  id: symbol
+  description: string
+  createdAt: Date
+}

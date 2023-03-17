@@ -17,7 +17,6 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "sass": "^1.59.3",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -51,7 +50,13 @@
   "devDependencies": {
     "@types/react-redux": "^7.1.25",
     "@types/redux": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
     "eslint": "^8.36.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "typescript": "^4.9.5"
   }
 }
