@@ -1,5 +1,5 @@
 export interface TodoState {
-  todos: Todo[];
+  todos: Todo[]
 }
 
 export enum TodoActionTypes {
@@ -8,16 +8,16 @@ export enum TodoActionTypes {
   DELETE_TODO = 'DELETE_TODO',
 }
 interface addTodoAction {
-  type: TodoActionTypes.ADD_TODO;
-  payload: Todo;
+  type: TodoActionTypes.ADD_TODO
+  payload: Todo
 }
 interface editTodoAction {
-  type: TodoActionTypes.EDIT_TODO;
-  payload: Todo;
+  type: TodoActionTypes.EDIT_TODO
+  payload: Todo
 }
 interface deleteTodoAction {
-  type: TodoActionTypes.DELETE_TODO;
-  payload: symbol;
+  type: TodoActionTypes.DELETE_TODO
+  payload: symbol
 }
 
-export type TodoAction = addTodoAction | editTodoAction | deleteTodoAction;
+export type TodoAction = addTodoAction | editTodoAction | deleteTodoAction
