@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './todoList.module.scss'
 import { List, Button } from 'antd'
 import { useTypedSelector } from '../../hooks/useTypedSelector'
 import { useActions } from '../../hooks/useActions'
@@ -21,7 +22,7 @@ export const TodoList = ({ handleEditClick }: iTodoListProps): JSX.Element => {
       renderItem={(todo) => (
         <List.Item
           extra = {
-            <div>
+            <div className={styles.buttons}>
               <Button type="primary" htmlType="button" onClick={() => { handleEditClick(todo) }} icon={<EditFilled />}/>
               <Button type="primary" htmlType="button" onClick={() => deleteTodo(todo.id)} icon={<CloseOutlined />} danger />
             </div>
