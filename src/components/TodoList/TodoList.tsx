@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './todoList.module.scss'
 import { List, Button } from 'antd'
-import { useTypedSelector } from '../../hooks/useTypedSelector'
-import { useActions } from '../../hooks/useActions'
+import { $todo, deleteTodo } from '../../models/todo'
+import { useStore } from 'effector-react'
 import { CloseOutlined, EditFilled } from '@ant-design/icons'
 
 interface iTodoListProps {
@@ -10,8 +10,7 @@ interface iTodoListProps {
 }
 
 export const TodoList = ({ handleEditClick }: iTodoListProps): JSX.Element => {
-  const todos = useTypedSelector(state => state.todo.todos)
-  const { deleteTodo } = useActions()
+  const todos = useStore($todo)
 
   return (
     <List

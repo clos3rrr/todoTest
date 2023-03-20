@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Input, Modal } from 'antd'
-import { useActions } from '../../../hooks/useActions'
+import { addTodo, editTodo } from '../../../models/todo'
 
 interface ITodoFormModalProps {
   todo: Todo | null
@@ -10,7 +10,6 @@ interface ITodoFormModalProps {
 
 export const TodoFormModal = ({ todo, open, setOpen }: ITodoFormModalProps): JSX.Element => {
   const [form] = Form.useForm()
-  const { addTodo, editTodo } = useActions()
 
   const handleSubmit = (): void => {
     form
